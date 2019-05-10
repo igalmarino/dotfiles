@@ -59,7 +59,6 @@ exec swayidle -w timeout 300 'swaylock -f -c 000000' timeout 600 'swaymsg "outpu
 input 1:1:AT_Translated_Set_2_keyboard {
     xkb_layout us
     xkb_variant altgr-intl
-    xkb_options caps:escape,compose:menu,level3:ralt_switch
 }
 
 ### Key bindings
@@ -240,5 +239,6 @@ bar {
 # Autostart
 #
 exec mako
+exec insync start --headless
 
 include /etc/sway/config.d/*
